@@ -1,0 +1,21 @@
+{
+  "name": "mako-monorepo",
+  "private": true,
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "istanbul": "^0.4.5",
+    "istanbul-coveralls": "^1.0.3",
+    "lerna": "^2.0.0-rc.4",
+    "mocha": "^3.3.0",
+    "standard": "^10.0.2"
+  },
+  "scripts": {
+    "preinstall": "lerna exec -- npm run prune",
+    "install": "lerna bootstrap",
+    "test": "lerna run test",
+    "coverage": "lerna run coverage",
+    "coveralls": "lerna run coveralls"
+  }
+}
