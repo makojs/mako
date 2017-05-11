@@ -1,0 +1,31 @@
+{
+  "name": "mako-stat",
+  "version": "1.0.0",
+  "description": "A mako plugin that adds a preread hook for stat-ing a file",
+  "keywords": [
+    "mako-plugin",
+    "stat"
+  ],
+  "repository": "makojs/stat",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "mako-utils": "^1.0.0"
+  },
+  "peerDependencies": {
+    "mako": "^1.0.0"
+  },
+  "devDependencies": {
+    "mako": "^1.0.0",
+    "touch": "^1.0.0"
+  },
+  "scripts": {
+    "test": "istanbul cover _mocha",
+    "coveralls": "istanbul-coveralls"
+  },
+  "standard": {
+    "ignore": [
+      "test/fixtures/**"
+    ]
+  }
+}

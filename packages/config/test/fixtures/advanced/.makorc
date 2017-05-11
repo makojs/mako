@@ -1,0 +1,12 @@
+{
+  "root": "dir",
+  "concurrency": 250,
+  "entries": [
+    "dir/*.txt"
+  ],
+  "plugins": [
+    "vendor",
+    [ "echo", "a" ],
+    "./local"
+  ]
+}

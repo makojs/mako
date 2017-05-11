@@ -1,0 +1,40 @@
+{
+  "name": "mako-css",
+  "version": "1.2.1",
+  "description": "a mako plugin for assembling css files and their linked assets",
+  "keywords": [
+    "mako-plugin",
+    "css",
+    "npm"
+  ],
+  "repository": "makojs/css",
+  "license": "MIT",
+  "dependencies": {
+    "@dominicbarnes/cssdeps": "^1.1.0",
+    "array-flatten": "^2.0.0",
+    "array-without": "0.0.2",
+    "bluebird": "^3.4.1",
+    "browser-resolve": "^1.10.1",
+    "convert-source-map": "^1.1.3",
+    "dataurify": "^1.0.4",
+    "debug": "^2.2.0",
+    "is-datauri": "^0.1.0",
+    "is-url": "^1.2.1",
+    "mako-utils": "^1.0.0",
+    "rework": "^1.0.1",
+    "rework-custom-import": "^0.3.0",
+    "rework-plugin-url": "^1.1.0",
+    "strip-extension": "^1.1.0"
+  },
+  "peerDependencies": {
+    "mako": "^1.0.0"
+  },
+  "devDependencies": {
+    "mako": "^1.0.0",
+    "normalize.css": "^5.0.0"
+  },
+  "scripts": {
+    "test": "istanbul cover _mocha",
+    "coveralls": "istanbul-coveralls"
+  }
+}

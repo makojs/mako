@@ -1,0 +1,30 @@
+{
+  "name": "mako-output",
+  "version": "1.0.0",
+  "description": "A mako plugin that sets an output path in a directory relative to a specified root",
+  "keywords": [
+    "mako-plugin"
+  ],
+  "repository": "makojs/output",
+  "license": "MIT",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "defaults": "^1.0.3",
+    "mako-utils": "^1.0.0"
+  },
+  "peerDependencies": {
+    "mako": "^1.0.0"
+  },
+  "devDependencies": {
+    "mako": "^1.0.0"
+  },
+  "scripts": {
+    "test": "istanbul cover _mocha",
+    "coveralls": "istanbul-coveralls"
+  },
+  "standard": {
+    "ignore": [
+      "test/fixtures/**"
+    ]
+  }
+}

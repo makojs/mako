@@ -1,0 +1,39 @@
+{
+  "name": "mako-uglify",
+  "version": "1.0.0",
+  "description": "A mako plugin for minifying JS code using UglifyJS",
+  "keywords": [
+    "mako-plugin",
+    "uglify",
+    "js",
+    "minify"
+  ],
+  "repository": "makojs/uglify",
+  "license": "MIT",
+  "dependencies": {
+    "convert-source-map": "^1.1.3",
+    "debug": "^2.2.0",
+    "defaults": "^1.0.3",
+    "mako-utils": "^1.0.0",
+    "uglify-js": "^2.6.1"
+  },
+  "peerDependencies": {
+    "mako": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.0.18",
+    "convert-source-map": "^1.1.2",
+    "mako": "^1.1.2",
+    "uid": "0.0.2"
+  },
+  "scripts": {
+    "test": "istanbul cover _mocha",
+    "coveralls": "istanbul-coveralls"
+  },
+  "standard": {
+    "ignore": [
+      "test/fixtures/**",
+      "example/**"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "entries": [
+    "index.html"
+  ],
+  "plugins": [
+    [ "echo", "default" ]
+  ],
+  "development": {
+    "plugins": [
+      [ "echo", "dev" ]
+    ]
+  },
+  "stage": {},
+  "production": {
+    "entries": [
+      "production.js"
+    ],
+    "plugins": [
+      [ "echo", "prod" ]
+    ]
+  }
+}

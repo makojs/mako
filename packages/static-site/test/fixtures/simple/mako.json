@@ -1,0 +1,9 @@
+{
+  "entries": [
+    "index.md",
+    "posts/*.md"
+  ],
+  "plugins": [
+    ".."
+  ]
+}

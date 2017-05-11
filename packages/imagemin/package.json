@@ -1,0 +1,29 @@
+{
+  "name": "mako-imagemin",
+  "version": "0.0.1",
+  "description": "A mako plugin for compressing images using imagemin",
+  "keywords": [
+    "mako-plugin",
+    "imagemin",
+    "compression"
+  ],
+  "repository": "makojs/imagemin",
+  "license": "MIT",
+  "dependencies": {
+    "array-flatten": "^2.1.0",
+    "debug": "^2.2.0",
+    "imagemin": "^5.2.2",
+    "mako-utils": "^1.0.0"
+  },
+  "peerDependencies": {
+    "mako": "^1.0.0"
+  },
+  "devDependencies": {
+    "imagemin-svgo": "^5.2.0",
+    "mako": "^1.0.0"
+  },
+  "scripts": {
+    "test": "istanbul cover _mocha",
+    "coveralls": "istanbul-coveralls"
+  }
+}

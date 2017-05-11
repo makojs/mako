@@ -1,0 +1,14 @@
+sudo: false
+language: node_js
+node_js:
+  - 7
+  - 6
+  - 4
+install:
+  - npm install
+after_success:
+  - npm run coveralls
+cache:
+  directories:
+    - node_modules
+    - packages/*/node_modules

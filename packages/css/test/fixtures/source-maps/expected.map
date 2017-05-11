@@ -1,0 +1,1 @@
+{"version":3,"sources":["test/fixtures/source-maps/index.css","test/fixtures/source-maps/lib/index.css"],"names":[],"mappings":"AACA;EACE;;;ACDF;EACE","sourcesContent":["\nhtml {\n  background-color: green;\n}\n\n@import './lib';\n","\nmain {\n  color: white;\n}\n"],"sourceRoot":"file://mako"}

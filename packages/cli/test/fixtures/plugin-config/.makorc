@@ -1,0 +1,8 @@
+{
+  "entries": [
+    "index.js"
+  ],
+  "plugins": [
+    [ "mako-browser", { "output": "build/sub" } ]
+  ]
+}

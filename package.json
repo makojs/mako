@@ -12,10 +12,17 @@
     "standard": "^10.0.2"
   },
   "scripts": {
-    "preinstall": "lerna exec -- npm run prune",
+    "preinstall": "lerna exec -- npm prune",
     "install": "lerna bootstrap",
+    "lint": "standard",
+    "pretest": "npm run lint",
     "test": "lerna run test",
     "coverage": "lerna run coverage",
     "coveralls": "lerna run coveralls"
+  },
+  "standard": {
+    "ignore": [
+      "packages/*/test/fixtures/**"
+    ]
   }
 }

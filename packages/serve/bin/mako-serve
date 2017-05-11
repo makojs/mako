@@ -1,0 +1,49 @@
+#!/usr/bin/env node
+
+'use strict'
+
+let config = require('mako-config')
+let koa = require('koa')
+let log = require('mako-logger')
+let middleware = require('../lib/middleware')
+let mount = require('koa-mount')
+let pkg = require('../package.json')
+let program = require('commander')
+let serve = require('..')
+
+program
+  .version(pkg.version)
+  .usage('[options] [...entries]')
+  .option('-b, --base <url>', 'set a custom base url', '/')
+  .option('-C, --cache', 'turn on caching')
+  .option('-f, --favicon <path>', 'set the path to a favicon image', false)
+  .option('-l, --livereload', 'turn on livereload', false)
+  .option('-o, --output <path>', 'the output path for serving files from', 'build')
+  .option('-p, --port <number>', 'set the server port number', 3000)
+  .option('-P, --path <path>', 'choose a path other than cwd', process.cwd())
+  .parse(process.argv)
+
+let app = koa()
+let conf = config.sync({ overrides: program.args })
+
+let mako = serve({
+  entries: conf.entries,
+  plugins: conf.plugins,
+  root: conf.root || program.path,
+  output: program.output,
+  cache: program.cache,
+  livereload: program.livereload
+})
+
+app.use(middleware.favicon(program.favicon))
+app.use(middleware.logger(log))
+app.use(middleware.error())
+app.use(mount(program.base, mako.middleware))
+
+app.on('error', err => log.error(err.stack))
+
+let port = program.port
+app.listen(port, () => log.info('mako-serve listening at http://localhost:%d', port))
+if (mako.livereload) {
+  mako.livereload.listen(() => log.info('livereload server listening'))
+}

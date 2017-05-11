@@ -1,0 +1,6 @@
+
+html {
+  background-color: green;
+}
+
+@import './lib';

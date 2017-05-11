@@ -1,0 +1,8 @@
+{
+  "entries": [
+    "*.js"
+  ],
+  "plugins": [
+    "mako-browser"
+  ]
+}

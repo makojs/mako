@@ -1,0 +1,22 @@
+{
+  "name": "mako-utils",
+  "version": "1.0.0",
+  "description": "Internal utilities for mako and plugins.",
+  "keywords": [
+    "mako",
+    "utils",
+    "utilities",
+    "internal"
+  ],
+  "repository": "makojs/utils",
+  "license": "MIT",
+  "dependencies": {
+    "figures": "^2.0.0",
+    "pretty-bytes": "^4.0.2",
+    "pretty-hrtime": "^1.0.2"
+  },
+  "scripts": {
+    "test": "istanbul cover _mocha",
+    "coveralls": "istanbul-coveralls"
+  }
+}

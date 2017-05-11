@@ -1,0 +1,8 @@
+{
+  "name": "mako-js-test-fixture",
+  "version": "0.0.0",
+  "private": true,
+  "devDependencies": {
+    "sshpk": "^1.10.1"
+  }
+}

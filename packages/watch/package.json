@@ -1,0 +1,30 @@
+{
+  "name": "mako-watch",
+  "version": "1.0.2",
+  "description": "A mako plugin for watching the filesystem for changes and re-running builds.",
+  "keywords": [
+    "mako-plugin",
+    "watch"
+  ],
+  "repository": "makojs/watch",
+  "license": "MIT",
+  "peerDependencies": {
+    "mako": "^1.0.0"
+  },
+  "dependencies": {
+    "chokidar": "^1.6.0",
+    "debug": "^2.2.0",
+    "mako-tree": "^1.3.1",
+    "mako-utils": "^1.0.0"
+  },
+  "devDependencies": {
+    "bluebird": "^3.4.1",
+    "mako": "^1.0.0",
+    "mako-tree": "^1.0.0",
+    "touch": "^1.0.0"
+  },
+  "scripts": {
+    "test": "istanbul cover _mocha",
+    "coveralls": "istanbul-coveralls"
+  }
+}

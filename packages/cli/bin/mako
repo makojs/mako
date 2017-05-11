@@ -1,0 +1,83 @@
+#!/usr/bin/env node
+
+'use strict'
+
+// dependencies
+let cache = require('mako-cache')
+let config = require('mako-config')
+let logger = require('mako-logger')
+let mako = require('mako')
+let pkg = require('../package.json')
+let program = require('commander')
+let Promise = require('bluebird')
+let utils = require('mako-utils')
+let Watcher = require('mako-watch')
+
+require('bluebird-co')
+
+// cli configuration
+program
+  .version(pkg.version)
+  .usage('[options] [entries...]')
+  .option('-C, --cache', 'turn on caching')
+  .option('-q, --quiet', 'only log errors')
+  .option('-v, --verbose', 'turn on verbose logging')
+  .option('-w, --watch', 'rebuild when changes occur')
+  .parse(process.argv)
+
+// set the log output level
+if (program.verbose) {
+  logger.setLevel('verbose')
+} else if (program.quiet) {
+  logger.setLevel('error')
+}
+
+// run!
+Promise.coroutine(main)().catch(err => logger.fatal(err))
+
+/**
+ * The primary behavior for this script.
+ */
+function * main () {
+  let conf = yield config({ overrides: program.args })
+  logger.verbose('config loaded')
+
+  let tree = program.cache ? yield cache.load(conf.root) : null
+  if (tree) logger.verbose('cache loaded')
+
+  let builder = mako({
+    tree: tree,
+    root: conf.root,
+    plugins: conf.plugins
+  })
+
+  yield runBuild(builder, conf.entries)
+
+  if (program.watch) {
+    logger.info('watch starting')
+    let watcher = new Watcher(builder.tree)
+
+    watcher.on('change', (file, tree) => {
+      logger.info('change detected: %s', utils.relative(file.path))
+      Promise.coroutine(runBuild)(builder, conf.entries)
+    })
+  }
+}
+
+/**
+ * Runs a build for the given builder/entries.
+ *
+ * @param {Runner} builder  The mako builder/runner.
+ * @param {Array} entries   The entries to build.
+ */
+function * runBuild (builder, entries) {
+  logger.verbose('build starting')
+  entries.forEach(entry => logger.info('building %s', utils.relative(entry)))
+  let build = yield builder.build(entries)
+  if (program.cache) {
+    yield cache.save(builder.tree)
+    logger.verbose('cache saved')
+  }
+  build.tree.getFiles().forEach(file => logger.info('built %s', utils.relative(file.path)))
+  logger.info('build complete')
+}

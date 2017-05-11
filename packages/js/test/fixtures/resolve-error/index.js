@@ -1,0 +1,2 @@
+
+require('does-not-exist');

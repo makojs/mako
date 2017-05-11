@@ -1,0 +1,31 @@
+{
+  "name": "mako-sourcemaps",
+  "version": "1.0.0",
+  "description": "A mako plugin for working with source maps.",
+  "keywords": [
+    "mako-plugin",
+    "sourcemaps"
+  ],
+  "repository": "makojs/sourcemaps",
+  "license": "MIT",
+  "dependencies": {
+    "convert-source-map": "^1.2.0",
+    "debug": "^2.2.0",
+    "mako-utils": "^1.0.0"
+  },
+  "peerDependencies": {
+    "mako": "^1.0.0"
+  },
+  "devDependencies": {
+    "mako": "^1.1.2"
+  },
+  "scripts": {
+    "test": "istanbul cover _mocha",
+    "coveralls": "istanbul-coveralls"
+  },
+  "standard": {
+    "ignore": [
+      "test/fixtures/**"
+    ]
+  }
+}

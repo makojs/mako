@@ -1,0 +1,30 @@
+{
+  "name": "mako-cssnano",
+  "version": "1.0.0",
+  "description": "A mako plugin for minifying CSS code",
+  "keywords": [
+    "mako-plugin",
+    "cssnano",
+    "css",
+    "minify"
+  ],
+  "repository": "makojs/cssnano",
+  "license": "MIT",
+  "dependencies": {
+    "convert-source-map": "^1.1.3",
+    "cssnano": "^3.4.0",
+    "debug": "^2.2.0",
+    "mako-utils": "^1.0.0"
+  },
+  "peerDependencies": {
+    "mako": "^1.0.0"
+  },
+  "devDependencies": {
+    "mako": "^1.0.0",
+    "normalize.css": "^5.0.0"
+  },
+  "scripts": {
+    "test": "istanbul cover _mocha",
+    "coveralls": "istanbul-coveralls"
+  }
+}

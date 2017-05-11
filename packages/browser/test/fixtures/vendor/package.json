@@ -1,0 +1,9 @@
+{
+  "name": "mako-browser-test-vendor",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "lodash.fill": "3.2.2",
+    "normalize.css": "3.0.3"
+  }
+}

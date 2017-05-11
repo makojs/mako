@@ -1,0 +1,20 @@
+{
+  "name": "mako-logger",
+  "version": "0.1.0",
+  "description": "A logger to be shared by mako CLI tools.",
+  "keywords": [
+    "mako",
+    "internal",
+    "cli",
+    "logging"
+  ],
+  "repository": "makojs/logger",
+  "license": "MIT",
+  "dependencies": {
+    "winston": "^2.2.0"
+  },
+  "scripts": {
+    "test": "istanbul cover _mocha",
+    "coveralls": "istanbul-coveralls"
+  }
+}

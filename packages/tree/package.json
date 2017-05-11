@@ -1,0 +1,31 @@
+{
+  "name": "mako-tree",
+  "version": "1.6.0",
+  "main": "./lib/tree",
+  "description": "The build tree structure used internally by mako",
+  "keywords": [
+    "mako-util",
+    "tree"
+  ],
+  "repository": "makojs/tree",
+  "dependencies": {
+    "babel-polyfill-safer": "^6.6.1",
+    "bytes": "^2.4.0",
+    "debug": "^2.2.0",
+    "file-extension": "^3.0.2",
+    "graph-toposort": "^0.2.0",
+    "graph.js": "^1.20.12",
+    "mako-utils": "^1.0.0",
+    "pretty-time": "^0.2.0",
+    "regex-iso-date": "^1.0.0",
+    "uuid": "^3.0.0",
+    "vinyl": "^2.0.0"
+  },
+  "devDependencies": {
+    "buffer-equal": "^1.0.0"
+  },
+  "scripts": {
+    "test": "istanbul cover _mocha",
+    "coveralls": "istanbul-coveralls"
+  }
+}

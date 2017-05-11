@@ -1,0 +1,9 @@
+
+@custom-media --small-viewport (max-width: 30em);
+
+@media (--small-viewport) {
+  html {
+    background-color: #338c00;
+    background-image: url('./texture.png');
+  }
+}
