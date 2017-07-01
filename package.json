@@ -21,7 +21,8 @@
     "posttest": "istanbul-combine packages/*/coverage/coverage.json",
     "coveralls": "istanbul-coveralls",
     "clean": "lerna clean",
-    "security": "lerna exec -- nsp check"
+    "security": "lerna exec -- nsp check",
+    "publish": "lerna publish"
   },
   "standard": {
     "ignore": [
