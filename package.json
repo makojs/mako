@@ -12,8 +12,8 @@
     "standard": "^10.0.2"
   },
   "scripts": {
-    "preinstall": "lerna exec -- npm prune",
     "install": "lerna bootstrap",
+    "postinstall": "lerna exec -- npm prune",
     "lint": "standard",
     "pretest": "npm run lint",
     "test": "lerna run test",
