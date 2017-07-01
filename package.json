@@ -13,12 +13,12 @@
   },
   "scripts": {
     "install": "lerna bootstrap",
-    "postinstall": "lerna exec -- npm prune",
     "lint": "standard",
     "pretest": "npm run lint",
     "test": "lerna run test",
     "coverage": "lerna run coverage",
-    "coveralls": "lerna run coveralls"
+    "coveralls": "lerna run coveralls",
+    "clean": "lerna clean"
   },
   "standard": {
     "ignore": [
