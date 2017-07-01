@@ -17,7 +17,7 @@
     "lint": "standard",
     "pretest": "npm run lint",
     "test": "lerna run test",
-    "coverage": "istanbul-combine packages/*/coverage/coverage.json",
+    "posttest": "istanbul-combine packages/*/coverage/coverage.json",
     "coveralls": "istanbul-coveralls",
     "clean": "lerna clean"
   },
