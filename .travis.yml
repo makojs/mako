@@ -5,7 +5,7 @@ node_js:
   - 6
   - 4
 install:
-  - npm install
+  - npm update
 after_success:
   - npm run coveralls
 cache:
