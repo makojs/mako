@@ -289,7 +289,7 @@ function doPack (file, mapping, sourceMaps, sourceRoot) {
   let map = convert.fromObject(results.map)
   map.setProperty('sourceRoot', sourceRoot)
 
-  file.contents = new Buffer(results.code)
+  file.contents = Buffer.from(results.code)
   file.sourceMap = sourceMaps ? map.toObject() : null
 }
 

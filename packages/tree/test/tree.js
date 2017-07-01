@@ -796,10 +796,10 @@ describe('Tree([root])', function () {
       // a <- b
       let tree = new Tree()
       let a = tree.addFile('a.js')
-      a.contents = new Buffer('a')
+      a.contents = Buffer.from('a')
       a.modified = new Date()
       let b = tree.addFile('b.js')
-      b.contents = new Buffer('b')
+      b.contents = Buffer.from('b')
       b.modified = new Date()
       tree.addDependency(a, b)
 

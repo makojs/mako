@@ -60,7 +60,7 @@ function * save (tree) {
   let dir = path.dirname(file)
   yield Promise.fromCallback(done => mkdirp(dir, done))
   let str = yield Promise.fromCallback(done => stringify(tree.toJSON(), done))
-  let contents = yield zlib.gzip(new Buffer(str))
+  let contents = yield zlib.gzip(Buffer.from(str))
   yield Promise.fromCallback(done => write(file, contents, done))
   debug('saved %s as %s (took %s)', utils.size(contents), file, timer())
   return file

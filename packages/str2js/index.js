@@ -20,7 +20,7 @@ module.exports = function (extensions) {
 
     debug('converting file %s', relative)
     let before = utils.size(file.contents, true)
-    file.contents = new Buffer(convert(file.contents.toString()))
+    file.contents = Buffer.from(convert(file.contents.toString()))
     file.type = `${file.type}.js`
     let after = utils.size(file.contents, true)
     debug('converted %s %s', relative, utils.sizeDiff(before, after))

@@ -21,7 +21,7 @@ module.exports = function () {
           outSourceMap: !!file.sourceMap
         })
 
-        file.contents = new Buffer(results.code)
+        file.contents = Buffer.from(results.code)
         if (results.map) {
           let map = convert.fromJSON(results.map)
           map.setProperty('sourcesContent', file.sourceMap.sourcesContent)

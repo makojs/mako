@@ -47,9 +47,9 @@ module.exports = function (extensions, options) {
     let map = convert.fromObject(file.sourceMap)
     file.contents = Buffer.concat([
       file.contents,
-      new Buffer(`\n${mapFileComment(basename(mapFile.path), file.type)}`)
+      Buffer.from(`\n${mapFileComment(basename(mapFile.path), file.type)}`)
     ])
-    mapFile.contents = new Buffer(map.toJSON(config.spaces))
+    mapFile.contents = Buffer.from(map.toJSON(config.spaces))
     file.addDependency(mapFile)
   }
 
@@ -63,7 +63,7 @@ module.exports = function (extensions, options) {
     let map = convert.fromObject(file.sourceMap)
     file.contents = Buffer.concat([
       file.contents,
-      new Buffer(`\n${map.toComment({ multiline: file.type === 'css' })}`)
+      Buffer.from(`\n${map.toComment({ multiline: file.type === 'css' })}`)
     ])
   }
 }

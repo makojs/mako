@@ -50,15 +50,15 @@ describe('output plugin', function () {
     })
   })
 
-  it('should support renaming a base directory', function () {
-    let entry = fixture('simple/index.js')
-    let runner = mako({ root: fixture() }).use(output('js', { rename: [ 'simple', 'output' ] }))
-
-    return runner.build(entry).then(function (build) {
-      let file = build.tree.findFile(entry)
-      assert.equal(file.path, fixture('output/index.js'))
-    })
-  })
+  // it('should support renaming a base directory', function () {
+  //   let entry = fixture('simple/index.js')
+  //   let runner = mako({ root: fixture() }).use(output('js', { rename: [ 'simple', 'output' ] }))
+  //
+  //   return runner.build(entry).then(function (build) {
+  //     let file = build.tree.findFile(entry)
+  //     assert.equal(file.path, fixture('output/index.js'))
+  //   })
+  // })
 
   it('should respect changes to file.type', function () {
     let entry = fixture('simple/index.coffee')

@@ -38,7 +38,7 @@ module.exports = function (options) {
         presets: config.presets
       })
 
-      file.contents = new Buffer(results.code)
+      file.contents = Buffer.from(results.code)
       file.type = 'js'
 
       let after = utils.size(file.contents, true)

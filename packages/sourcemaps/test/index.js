@@ -31,7 +31,7 @@ describe('sourcemaps plugin', function () {
     it('should add an external map file to the tree', function () {
       let runner = mako().use(sourcemaps('js'))
       let file = runner.tree.addFile(path.resolve('foo.js'))
-      file.contents = new Buffer('console.log("hello world");')
+      file.contents = Buffer.from('console.log("hello world");')
       file.sourceMap = js
 
       return runner.build(file.path).then(function (build) {
@@ -44,7 +44,7 @@ describe('sourcemaps plugin', function () {
     it('should link to the external file in the source file', function () {
       let runner = mako().use(sourcemaps('js'))
       let file = runner.tree.addFile(path.resolve('foo.js'))
-      file.contents = new Buffer('console.log("hello world");')
+      file.contents = Buffer.from('console.log("hello world");')
       file.sourceMap = js
 
       return runner.build(file.path).then(function (build) {
@@ -56,7 +56,7 @@ describe('sourcemaps plugin', function () {
     it('should use the right syntax for external CSS source maps', function () {
       let runner = mako().use(sourcemaps('css'))
       let file = runner.tree.addFile(path.resolve('foo.css'))
-      file.contents = new Buffer('body {\n  background-color: blue;\n}')
+      file.contents = Buffer.from('body {\n  background-color: blue;\n}')
       file.sourceMap = css
 
       return runner.build(file.path).then(function (build) {
@@ -70,7 +70,7 @@ describe('sourcemaps plugin', function () {
     it('should write the source map as an inline comment', function () {
       let runner = mako().use(sourcemaps('js', { inline: true }))
       let file = runner.tree.addFile(path.resolve('foo.js'))
-      file.contents = new Buffer('console.log("hello world");')
+      file.contents = Buffer.from('console.log("hello world");')
       file.sourceMap = js
 
       return runner.build(file.path).then(function (build) {
@@ -84,7 +84,7 @@ describe('sourcemaps plugin', function () {
     it('should use the right syntax for inline CSS source maps', function () {
       let runner = mako().use(sourcemaps('css', { inline: true }))
       let file = runner.tree.addFile(path.resolve('foo.css'))
-      file.contents = new Buffer('console.log("hello world");')
+      file.contents = Buffer.from('console.log("hello world");')
       file.sourceMap = css
 
       return runner.build(file.path).then(function (build) {
@@ -98,7 +98,7 @@ describe('sourcemaps plugin', function () {
     it('should include spaces in json output', function () {
       let runner = mako().use(sourcemaps('js', { spaces: 2 }))
       let file = runner.tree.addFile(path.resolve('foo.js'))
-      file.contents = new Buffer('console.log("hello world");')
+      file.contents = Buffer.from('console.log("hello world");')
       file.sourceMap = js
 
       return runner.build(file.path).then(function (build) {

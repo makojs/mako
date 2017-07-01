@@ -45,7 +45,7 @@ module.exports = options => {
       if (err) return done(err)
 
       file.type = 'css'
-      file.contents = new Buffer(css)
+      file.contents = Buffer.from(css)
       if (config.sourceMaps) file.sourceMap = styl.sourcemap
 
       let after = utils.size(file.contents, true)

@@ -26,7 +26,7 @@ describe('File(params, tree)', function () {
   it('should allow setting additional vinyl params', function () {
     let path = 'a.js'
     let base = '/path/to'
-    let contents = new Buffer('hello world')
+    let contents = Buffer.from('hello world')
     let file = new File({ path, base, contents })
     assert.strictEqual(file.base, base)
     assert.strictEqual(file.contents.toString(), 'hello world')
@@ -202,7 +202,7 @@ describe('File(params, tree)', function () {
 
     it('should set the contents to null', function () {
       let file = new File('index.jade')
-      file.contents = new Buffer('hello world')
+      file.contents = Buffer.from('hello world')
       file.reset()
       assert.isNull(file.contents)
     })
@@ -307,7 +307,7 @@ describe('File(params, tree)', function () {
     it('should deep clone complex properties', function () {
       let a = new File({
         path: 'a',
-        contents: new Buffer('hello world')
+        contents: Buffer.from('hello world')
       })
       let clone = a.clone()
       assert.notStrictEqual(a.history, clone.history)
@@ -438,7 +438,7 @@ describe('File(params, tree)', function () {
 
     it('should properly handle buffer objects', function () {
       let file = new File('a.txt', null, true)
-      file.contents = new Buffer('hello world')
+      file.contents = Buffer.from('hello world')
 
       let actual = File.fromObject(file.toJSON())
       assert.isTrue(Buffer.isBuffer(actual.contents))

@@ -29,7 +29,7 @@ function markdown (mako) {
     md.use(meta)
     const html = md.render(file.contents.toString())
     file.type = 'html'
-    file.contents = new Buffer(html)
+    file.contents = Buffer.from(html)
     file.metadata = clone(md.meta)
   })
 }
@@ -47,7 +47,7 @@ function layout (mako) {
   mako.postdependencies('html', function layout (file, build) {
     if (file.layout) {
       file.dependants().forEach(parent => {
-        parent.contents = new Buffer(render(file, parent))
+        parent.contents = Buffer.from(render(file, parent))
         build.tree.removeDependency(parent, file)
       })
       build.tree.removeFile(file)

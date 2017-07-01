@@ -55,7 +55,7 @@ function save (tree) {
   debug('expected cache file %s', file)
   let dir = path.dirname(file)
   mkdirp(dir)
-  let contents = zlib.gzipSync(new Buffer(tree.toString()))
+  let contents = zlib.gzipSync(Buffer.from(tree.toString()))
   write(file, contents)
   debug('saved %s as %s (took %s)', utils.size(contents), file, timer())
   return file

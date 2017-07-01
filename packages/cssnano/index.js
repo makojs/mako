@@ -24,7 +24,7 @@ module.exports = function () {
         }
       })
 
-      file.contents = new Buffer(result.css)
+      file.contents = Buffer.from(result.css)
       file.sourceMap = convert.fromJSON(result.map).toObject()
 
       let after = utils.size(file.contents, true)

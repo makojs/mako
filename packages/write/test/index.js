@@ -21,7 +21,7 @@ describe('write plugin', function () {
   it('should write the file to the output location', function () {
     let runner = mako({ root: root }).use(output('txt'), write('txt'))
     let entry = runner.tree.addFile(path.resolve(root, 'index.txt'))
-    entry.contents = new Buffer('Hello World')
+    entry.contents = Buffer.from('Hello World')
 
     return runner.build(entry).then(function (build) {
       let file = build.tree.findFile(entry.path)
@@ -32,7 +32,7 @@ describe('write plugin', function () {
   it('should fail if the path is never changed', function () {
     let runner = mako({ root: root }).use(write('txt'))
     let entry = runner.tree.addFile(path.resolve(root, 'index.txt'))
-    entry.contents = new Buffer('Hello World')
+    entry.contents = Buffer.from('Hello World')
 
     return assert.isRejected(runner.build(entry.path))
   })
@@ -42,7 +42,7 @@ describe('write plugin', function () {
       it('should bypass the initialPath check', function () {
         let runner = mako({ root: root }).use(write('txt', { force: true }))
         let entry = runner.tree.addFile(path.resolve(root, 'index.txt'))
-        entry.contents = new Buffer('Hello World')
+        entry.contents = Buffer.from('Hello World')
 
         return runner.build(entry.path)
       })

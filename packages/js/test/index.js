@@ -141,7 +141,7 @@ describe('js plugin', function () {
     return mako()
       .use(buffer('txt'))
       .postread('txt', function txt (file) {
-        file.contents = new Buffer(`module.exports = "${file.contents.toString().trim()}";`)
+        file.contents = Buffer.from(`module.exports = "${file.contents.toString().trim()}";`)
         file.type = 'js'
       })
       .use(plugins())

@@ -1,5 +1,5 @@
 {
-  "name": "mako-monorepo",
+  "name": "mako",
   "private": true,
   "license": "MIT",
   "devDependencies": {

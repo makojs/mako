@@ -6,7 +6,7 @@ exports.error = require('koa-error')
 exports.favicon = require('koa-favicon')
 
 exports.logger = function (log) {
-  return function* (next) {
+  return function * (next) {
     log.info('<-- %s %s', this.method, this.originalUrl)
 
     try {

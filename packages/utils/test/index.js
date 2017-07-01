@@ -26,7 +26,7 @@ describe('utils', function () {
     })
 
     it('should work the same with a buffer', function () {
-      assert.strictEqual(utils.size(new Buffer('hello world')), '11 B')
+      assert.strictEqual(utils.size(Buffer.from('hello world')), '11 B')
     })
 
     it('should return 0 for falsy values', function () {

@@ -25,7 +25,7 @@ describe('stylus plugin', function () {
   it('should change file type to css', function () {
     let runner = mako().use(stylus())
     let entry = runner.tree.addFile(path.resolve('index.styl'))
-    entry.contents = new Buffer(src)
+    entry.contents = Buffer.from(src)
 
     return runner.build(entry.path).then(function (build) {
       let file = build.tree.findFile(path.resolve('index.styl'))
@@ -43,7 +43,7 @@ describe('stylus plugin', function () {
   it('should convert .styl into .css', function () {
     let runner = mako().use(stylus())
     let entry = runner.tree.addFile(path.resolve('index.styl'))
-    entry.contents = new Buffer(src)
+    entry.contents = Buffer.from(src)
 
     return runner.build(entry.path).then(function (build) {
       let file = build.tree.findFile(path.resolve('index.styl'))
@@ -57,7 +57,7 @@ describe('stylus plugin', function () {
       extensions: 'custom'
     }))
     let entry = runner.tree.addFile(path.resolve('index.custom'))
-    entry.contents = new Buffer(src)
+    entry.contents = Buffer.from(src)
 
     return runner.build(entry.path).then(function (build) {
       let file = build.tree.findFile(path.resolve('index.custom'))
@@ -71,7 +71,7 @@ describe('stylus plugin', function () {
       sourceMaps: true
     }))
     let entry = runner.tree.addFile(path.resolve('index.styl'))
-    entry.contents = new Buffer(src)
+    entry.contents = Buffer.from(src)
 
     return runner.build(entry.path).then(function (build) {
       let file = build.tree.findFile(path.resolve('index.styl'))
@@ -87,7 +87,7 @@ describe('stylus plugin', function () {
       sourceRoot: 'other://'
     }))
     let entry = runner.tree.addFile(path.resolve('index.styl'))
-    entry.contents = new Buffer(src)
+    entry.contents = Buffer.from(src)
 
     return runner.build(entry.path).then(function (build) {
       let file = build.tree.findFile(path.resolve('index.styl'))
@@ -107,7 +107,7 @@ describe('stylus plugin', function () {
       plugins: a
     }))
     let entry = runner.tree.addFile(path.resolve('index.styl'))
-    entry.contents = new Buffer(src)
+    entry.contents = Buffer.from(src)
 
     return runner.build(entry.path).then(function (build) {
       let file = build.tree.findFile(path.resolve('index.styl'))
@@ -129,7 +129,7 @@ describe('stylus plugin', function () {
       plugins: [a, b]
     }))
     let entry = runner.tree.addFile(path.resolve('index.styl'))
-    entry.contents = new Buffer(src)
+    entry.contents = Buffer.from(src)
 
     return runner.build(entry.path).then(function (build) {
       let file = build.tree.findFile(path.resolve('index.styl'))

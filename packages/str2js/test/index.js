@@ -11,9 +11,9 @@ describe('str2js plugin', function () {
   it('should convert file contents into a CommonJS module', function () {
     let runner = mako().use(str2js())
     let entry = runner.tree.addFile(path.resolve('index.js'))
-    entry.contents = new Buffer('module.exports = require("./index.txt");')
+    entry.contents = Buffer.from('module.exports = require("./index.txt");')
     let dep = runner.tree.addFile(path.resolve('index.txt'))
-    dep.contents = new Buffer('Hello World')
+    dep.contents = Buffer.from('Hello World')
     entry.addDependency(dep)
 
     return runner.build(entry.path).then(function (build) {
@@ -25,9 +25,9 @@ describe('str2js plugin', function () {
   it('should also convert html files', function () {
     let runner = mako().use(str2js())
     let entry = runner.tree.addFile(path.resolve('index.js'))
-    entry.contents = new Buffer('module.exports = require("./index.html");')
+    entry.contents = Buffer.from('module.exports = require("./index.html");')
     let dep = runner.tree.addFile(path.resolve('index.html'))
-    dep.contents = new Buffer('<p>Hello World</p>')
+    dep.contents = Buffer.from('<p>Hello World</p>')
     entry.addDependency(dep)
 
     return runner.build(entry.path).then(function (build) {
@@ -39,9 +39,9 @@ describe('str2js plugin', function () {
   it('should append the type instead of replacing', function () {
     let runner = mako().use(str2js())
     let entry = runner.tree.addFile(path.resolve('index.js'))
-    entry.contents = new Buffer('module.exports = require("./index.txt");')
+    entry.contents = Buffer.from('module.exports = require("./index.txt");')
     let dep = runner.tree.addFile(path.resolve('index.txt'))
-    dep.contents = new Buffer('Hello World')
+    dep.contents = Buffer.from('Hello World')
     entry.addDependency(dep)
 
     return runner.build(entry.path).then(function (build) {
@@ -53,9 +53,9 @@ describe('str2js plugin', function () {
   it('should allow setting a custom list of extensions', function () {
     let runner = mako().use(str2js('foo'))
     let entry = runner.tree.addFile(path.resolve('index.js'))
-    entry.contents = new Buffer('module.exports = require("./index.txt");')
+    entry.contents = Buffer.from('module.exports = require("./index.txt");')
     let dep = runner.tree.addFile(path.resolve('index.foo'))
-    dep.contents = new Buffer('Hello World')
+    dep.contents = Buffer.from('Hello World')
     entry.addDependency(dep)
 
     return runner.build(entry.path).then(function (build) {
@@ -67,7 +67,7 @@ describe('str2js plugin', function () {
   it('should not convert files that are not depended on by js files', function () {
     let runner = mako().use(str2js())
     let entry = runner.tree.addFile(path.resolve('index.html'))
-    entry.contents = new Buffer('<p>Hello World</p>')
+    entry.contents = Buffer.from('<p>Hello World</p>')
 
     return runner.build(entry.path).then(function (build) {
       let file = build.tree.findFile(entry.path)

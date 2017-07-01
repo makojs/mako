@@ -126,7 +126,9 @@ function run (name, args) {
     let options = { cwd: fixture(name) }
     cp.exec(cmd, options, function (err, stdout, stderr) {
       if (err) {
-        reject({ error: err, stdout: stdout, stderr: stderr })
+        err.stdout = stdout
+        err.stderr = stderr
+        reject(err)
       } else {
         resolve({ stdout: stdout, stderr: stderr })
       }

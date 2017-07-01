@@ -34,7 +34,7 @@ describe('buffer plugin', function () {
       assert.strictEqual(file.contents.toString(), 'hello world')
     })
 
-    return runner.parse({ contents: new Buffer('hello world'), path: entry })
+    return runner.parse({ contents: Buffer.from('hello world'), path: entry })
   })
 
   it('should propagate errors', function () {

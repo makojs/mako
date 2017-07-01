@@ -128,7 +128,7 @@ describe('mako-serve', function () {
       mako.postdependencies('txt', function (file, build) {
         if (file.basename === 'a.txt') {
           let dep = build.tree.addFile(fixture('deps/c.txt'))
-          dep.contents = new Buffer('c')
+          dep.contents = Buffer.from('c')
           file.addDependency(dep)
         }
       })
@@ -184,7 +184,7 @@ function init (options) {
 function lowercase (ext) {
   return function (mako) {
     mako.postread(ext, function (file) {
-      file.contents = new Buffer(file.contents.toString().toLowerCase())
+      file.contents = Buffer.from(file.contents.toString().toLowerCase())
     })
   }
 }

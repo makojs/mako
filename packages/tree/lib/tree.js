@@ -451,7 +451,7 @@ function id (file) {
  */
 function reviver (key, value) {
   if (value && value.type === 'Buffer') {
-    return new Buffer(value.data)
+    return Buffer.from(value.data)
   }
 
   if (typeof value === 'string' && iso.test(value)) {
