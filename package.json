@@ -6,6 +6,7 @@
     "chai": "^3.5.0",
     "chai-as-promised": "^6.0.0",
     "istanbul": "^0.4.5",
+    "istanbul-combine": "^0.3.0",
     "istanbul-coveralls": "^1.0.3",
     "lerna": "^2.0.0-rc.4",
     "mocha": "^3.3.0",
@@ -16,8 +17,8 @@
     "lint": "standard",
     "pretest": "npm run lint",
     "test": "lerna run test",
-    "coverage": "lerna run coverage",
-    "coveralls": "lerna run coveralls",
+    "coverage": "istanbul-combine packages/*/coverage/coverage.json",
+    "coveralls": "istanbul-coveralls",
     "clean": "lerna clean"
   },
   "standard": {
