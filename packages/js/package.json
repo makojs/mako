@@ -1,6 +1,6 @@
 {
   "name": "mako-js",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "A mako plugin for assembling js files.",
   "keywords": [
     "mako-plugin",
@@ -10,7 +10,7 @@
   "repository": "makojs/js",
   "license": "MIT",
   "peerDependencies": {
-    "mako": "^1.1.0"
+    "mako": "^1.1.7"
   },
   "dependencies": {
     "array-flatten": "^2.0.0",
@@ -32,7 +32,7 @@
     "https-browserify": "0.0.1",
     "insert-module-globals": "^7.0.1",
     "loose-envify": "^1.3.1",
-    "mako-utils": "^1.0.0",
+    "mako-utils": "^1.0.1",
     "object-values": "^1.0.0",
     "os-browserify": "^0.2.0",
     "path-browserify": "0.0.0",
@@ -56,7 +56,7 @@
     "vm-browserify": "0.0.4"
   },
   "devDependencies": {
-    "mako": "^1.1.0",
+    "mako": "^1.1.7",
     "uid": "0.0.2"
   },
   "scripts": {

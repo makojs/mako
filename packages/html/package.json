@@ -1,6 +1,6 @@
 {
   "name": "mako-html",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A mako plugin for parsing HTML files for dependencies.",
   "keywords": [
     "mako-plugin",
@@ -9,18 +9,18 @@
   "repository": "makojs/html",
   "license": "MIT",
   "peerDependencies": {
-    "mako": "^1.0.0"
+    "mako": "^1.1.7"
   },
   "dependencies": {
     "debug": "^2.2.0",
     "defaults": "^1.0.3",
     "deps-html": "^2.2.0",
     "is-url": "^1.2.1",
-    "mako-utils": "^1.0.0",
+    "mako-utils": "^1.0.1",
     "parse5-utils": "^2.0.0"
   },
   "devDependencies": {
-    "mako": "^1.0.0"
+    "mako": "^1.1.7"
   },
   "scripts": {
     "test": "istanbul cover _mocha",

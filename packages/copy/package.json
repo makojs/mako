@@ -1,6 +1,6 @@
 {
   "name": "mako-copy",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A mako plugin that copies files to an output directory",
   "keywords": [
     "mako-plugin",
@@ -10,15 +10,15 @@
   "license": "MIT",
   "dependencies": {
     "debug": "^2.2.0",
-    "mako-utils": "^1.0.0",
+    "mako-utils": "^1.0.1",
     "mz": "^2.4.0",
     "quickly-copy-file": "^1.0.0"
   },
   "peerDependencies": {
-    "mako": "^1.0.0"
+    "mako": "^1.1.7"
   },
   "devDependencies": {
-    "mako": "^1.0.0",
+    "mako": "^1.1.7",
     "rimraf": "^2.4.3"
   },
   "scripts": {

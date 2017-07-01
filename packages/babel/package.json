@@ -1,6 +1,6 @@
 {
   "name": "mako-babel",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A mako plugin for transpiling ES6 code using babel",
   "keywords": [
     "mako-plugin",
@@ -12,15 +12,15 @@
     "babel-core": "^6.0.20",
     "debug": "^2.2.0",
     "defaults": "^1.0.3",
-    "mako-utils": "^1.0.0"
+    "mako-utils": "^1.0.1"
   },
   "peerDependencies": {
-    "mako": "^1.0.0"
+    "mako": "^1.1.7"
   },
   "devDependencies": {
     "babel-plugin-transform-es2015-modules-commonjs": "^6.0.18",
     "convert-source-map": "^1.5.0",
-    "mako": "^1.1.2"
+    "mako": "^1.1.7"
   },
   "scripts": {
     "test": "istanbul cover _mocha",

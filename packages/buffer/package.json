@@ -1,6 +1,6 @@
 {
   "name": "mako-buffer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A mako plugin that adds a read hook for reading a file as a buffer",
   "keywords": [
     "mako-plugin",
@@ -10,13 +10,13 @@
   "license": "MIT",
   "dependencies": {
     "debug": "^2.2.0",
-    "mako-utils": "^1.0.0"
+    "mako-utils": "^1.0.1"
   },
   "peerDependencies": {
-    "mako": "^1.0.0"
+    "mako": "^1.1.7"
   },
   "devDependencies": {
-    "mako": "^1.0.0"
+    "mako": "^1.1.7"
   },
   "scripts": {
     "test": "istanbul cover _mocha",

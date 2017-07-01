@@ -1,6 +1,6 @@
 {
   "name": "mako-css",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "a mako plugin for assembling css files and their linked assets",
   "keywords": [
     "mako-plugin",
@@ -20,17 +20,17 @@
     "debug": "^2.2.0",
     "is-datauri": "^0.1.0",
     "is-url": "^1.2.1",
-    "mako-utils": "^1.0.0",
+    "mako-utils": "^1.0.1",
     "rework": "^1.0.1",
     "rework-custom-import": "^0.3.0",
     "rework-plugin-url": "^1.1.0",
     "strip-extension": "^1.1.0"
   },
   "peerDependencies": {
-    "mako": "^1.0.0"
+    "mako": "^1.1.7"
   },
   "devDependencies": {
-    "mako": "^1.0.0",
+    "mako": "^1.1.7",
     "normalize.css": "^5.0.0"
   },
   "scripts": {

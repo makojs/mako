@@ -1,6 +1,6 @@
 {
   "name": "mako-stylus",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A mako plugin for compiling stylus files to CSS.",
   "keywords": [
     "mako-plugin",
@@ -12,11 +12,11 @@
   "dependencies": {
     "arrify": "^1.0.1",
     "debug": "^2.2.0",
-    "mako-utils": "^1.0.0",
+    "mako-utils": "^1.0.1",
     "stylus": "^0.54.5"
   },
   "devDependencies": {
-    "mako": "^1.0.0"
+    "mako": "^1.1.7"
   },
   "scripts": {
     "test": "istanbul cover _mocha",

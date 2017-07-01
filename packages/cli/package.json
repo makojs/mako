@@ -1,6 +1,6 @@
 {
   "name": "mako-cli",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A CLI for the mako build runner",
   "keywords": [
     "mako-util",
@@ -16,16 +16,16 @@
     "bluebird": "^3.4.6",
     "bluebird-co": "^2.1.2",
     "commander": "^2.9.0",
-    "mako": "^1.1.6",
-    "mako-cache": "^2.1.0",
-    "mako-config": "^2.0.0",
-    "mako-logger": "^0.1.0",
-    "mako-utils": "^1.0.0",
-    "mako-watch": "^1.0.2",
+    "mako": "^1.1.7",
+    "mako-cache": "^2.1.2",
+    "mako-config": "^2.0.1",
+    "mako-logger": "^0.1.1",
+    "mako-utils": "^1.0.1",
+    "mako-watch": "^1.0.3",
     "winston": "^2.0.0"
   },
   "devDependencies": {
-    "mako-browser": "^1.0.0",
+    "mako-browser": "^1.0.2",
     "rimraf": "^2.4.3"
   },
   "scripts": {

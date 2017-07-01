@@ -1,6 +1,6 @@
 {
   "name": "mako-serve",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "A CLI tool for serving up files built using mako.",
   "keywords": [
     "mako-util",
@@ -23,21 +23,21 @@
     "koa-mount": "^1.3.0",
     "koa-static": "^2.0.0",
     "livereload-base": "0.0.0",
-    "mako": "^1.1.6",
-    "mako-cache": "^2.1.0",
-    "mako-config": "^2.0.0",
-    "mako-logger": "0.1.0",
-    "mako-utils": "^1.0.0",
-    "mako-watch": "^1.0.2"
+    "mako": "^1.1.7",
+    "mako-cache": "^2.1.2",
+    "mako-config": "^2.0.1",
+    "mako-logger": "^0.1.1",
+    "mako-utils": "^1.0.1",
+    "mako-watch": "^1.0.3"
   },
   "devDependencies": {
     "env-test": "^1.0.0",
     "is-generator-function": "^1.0.3",
-    "mako-buffer": "^1.0.0",
-    "mako-copy": "^1.0.0",
-    "mako-output": "^1.0.0",
-    "mako-stat": "^1.0.0",
-    "mako-write": "^1.0.0",
+    "mako-buffer": "^1.0.1",
+    "mako-copy": "^1.0.2",
+    "mako-output": "^1.0.1",
+    "mako-stat": "^1.0.1",
+    "mako-write": "^1.1.1",
     "rimraf": "^2.4.3",
     "supertest": "^2.0.0"
   },

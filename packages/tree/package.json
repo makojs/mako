@@ -1,6 +1,6 @@
 {
   "name": "mako-tree",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "main": "./lib/tree",
   "description": "The build tree structure used internally by mako",
   "keywords": [
@@ -16,7 +16,7 @@
     "file-extension": "^3.0.2",
     "graph-toposort": "^0.2.0",
     "graph.js": "^1.20.12",
-    "mako-utils": "^1.0.0",
+    "mako-utils": "^1.0.1",
     "pretty-time": "^0.2.0",
     "regex-iso-date": "^1.0.0",
     "uuid": "^3.0.0",

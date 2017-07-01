@@ -1,6 +1,6 @@
 {
   "name": "mako-static-site",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A mako plugin bundle for building a static website.",
   "keywords": [
     "mako-plugin",
@@ -14,21 +14,21 @@
   "repository": "makojs/static-site",
   "license": "MIT",
   "peerDependencies": {
-    "mako": "^1.0.0"
+    "mako": "^1.1.7"
   },
   "dependencies": {
     "clone": "^1.0.2",
     "debug": "^2.2.0",
-    "mako-browser": "^1.0.0",
-    "mako-buffer": "^1.0.0",
-    "mako-output": "^1.0.0",
-    "mako-stat": "^1.0.0",
+    "mako-browser": "^1.0.2",
+    "mako-buffer": "^1.0.1",
+    "mako-output": "^1.0.1",
+    "mako-stat": "^1.0.1",
     "mustache": "^2.2.1",
     "remarkable": "^1.6.2",
     "remarkable-meta": "^1.0.1"
   },
   "devDependencies": {
-    "mako": "^1.0.0",
+    "mako": "^1.1.7",
     "rimraf": "^2.4.3"
   },
   "scripts": {
