@@ -8,6 +8,7 @@
     "tree"
   ],
   "repository": "makojs/tree",
+  "license": "MIT",
   "dependencies": {
     "babel-polyfill-safer": "^6.6.1",
     "bytes": "^2.4.0",
