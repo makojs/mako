@@ -229,7 +229,7 @@ describe('js plugin', function () {
     })
 
     it('should work with sshpk', function () {
-      this.timeout('30s')
+      this.timeout('60s')
 
       let entry = fixture('circular-deps-4/index.js')
       return mako({ root: fixture('circular-deps-4') })
