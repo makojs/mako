@@ -3,11 +3,8 @@
 > Internal utilities for mako and plugins.
 
 [![npm version][npm-badge]][npm]
-[![coverage][coveralls-badge]][coveralls]
 [![npm dependencies][david-badge]][david]
 [![npm dev dependencies][david-dev-badge]][david-dev]
-[![nsp status][nsp-badge]][nsp]
-
 
 ## API
 
@@ -61,13 +58,9 @@ The returned function has an optional `raw` argument. When set to `true`, it
 will instead return the time elapsed in the raw hrtime array format.
 
 
-[coveralls-badge]: https://img.shields.io/coveralls/makojs/utils.svg
-[coveralls]: https://coveralls.io/github/makojs/utils
 [david-badge]: https://img.shields.io/david/makojs/utils.svg
 [david-dev-badge]: https://img.shields.io/david/dev/makojs/utils.svg
 [david-dev]: https://david-dm.org/makojs/utils#info=devDependencies
 [david]: https://david-dm.org/makojs/utils
 [npm-badge]: https://img.shields.io/npm/v/mako-utils.svg
 [npm]: https://www.npmjs.com/package/mako-utils
-[nsp-badge]: https://nodesecurity.io/orgs/mako/projects/4c3a8e9f-fb58-4a84-973b-1c48fe3b9917/badge
-[nsp]: https://nodesecurity.io/orgs/mako/projects/4c3a8e9f-fb58-4a84-973b-1c48fe3b9917

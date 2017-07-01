@@ -5,10 +5,8 @@
 > to them.
 
 [![npm version][npm-badge]][npm]
-[![coveralls status][coveralls-badge]][coveralls]
 [![npm dependencies][david-badge]][david]
 [![npm dev dependencies][david-dev-badge]][david-dev]
-[![nsp status][nsp-badge]][nsp]
 
 ## Purpose
 
@@ -56,8 +54,6 @@ configuration:
    invoked with the file as an argument, the return value is cast into a bool.
 
 
-[coveralls-badge]: https://img.shields.io/coveralls/makojs/css.svg
-[coveralls]: https://coveralls.io/github/makojs/css
 [david-badge]: https://img.shields.io/david/makojs/css.svg
 [david-dev-badge]: https://img.shields.io/david/dev/makojs/css.svg
 [david-dev]: https://david-dm.org/makojs/css#info=devDependencies
@@ -65,6 +61,4 @@ configuration:
 [mako-js]: ../js
 [npm-badge]: https://img.shields.io/npm/v/mako-css.svg
 [npm]: https://www.npmjs.com/package/mako-css
-[nsp-badge]: https://nodesecurity.io/orgs/mako/projects/d430f079-de6e-4f44-bd30-8516fa9cc1fb/badge
-[nsp]: https://nodesecurity.io/orgs/mako/projects/d430f079-de6e-4f44-bd30-8516fa9cc1fb
 [resolve]: https://www.npmjs.com/package/resolve

@@ -3,10 +3,8 @@
 > A plugin for working with JS, using npm as a package manager.
 
 [![npm version][npm-badge]][npm]
-[![coverage][coveralls-badge]][coveralls]
 [![npm dependencies][david-badge]][david]
 [![npm dev dependencies][david-dev-badge]][david-dev]
-[![nsp status][nsp-badge]][nsp]
 
 ## Purpose
 
@@ -35,8 +33,6 @@ Create a new plugin instance, with the following `options` available:
 
 
 [browser-resolve]: https://www.npmjs.com/package/browser-resolve
-[coveralls-badge]: https://img.shields.io/coveralls/makojs/js.svg
-[coveralls]: https://coveralls.io/github/makojs/js
 [david-badge]: https://img.shields.io/david/makojs/js.svg
 [david-dev-badge]: https://img.shields.io/david/dev/makojs/js.svg
 [david-dev]: https://david-dm.org/makojs/js#info=devDependencies
@@ -45,6 +41,4 @@ Create a new plugin instance, with the following `options` available:
 [mako-sourcemaps]: ../sourcemaps
 [npm-badge]: https://img.shields.io/npm/v/mako-js.svg
 [npm]: https://www.npmjs.com/package/mako-js
-[nsp-badge]: https://nodesecurity.io/orgs/mako/projects/3127eda3-004e-46f2-b0d5-39e49c675fcf/badge
-[nsp]: https://nodesecurity.io/orgs/mako/projects/3127eda3-004e-46f2-b0d5-39e49c675fcf
 [resolve]: https://www.npmjs.com/package/resolve

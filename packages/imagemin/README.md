@@ -3,10 +3,8 @@
 > A plugin for compressing images with [imagemin][imagemin].
 
 [![npm version][npm-badge]][npm]
-[![coverage][coveralls-badge]][coveralls]
 [![npm dependencies][david-badge]][david]
 [![npm dev dependencies][david-dev-badge]][david-dev]
-[![nsp status][nsp-badge]][nsp]
 
 ## Purpose
 
@@ -42,8 +40,6 @@ Below is an example `.makorc` that configures svg compression:
 ```
 
 
-[coveralls-badge]: https://img.shields.io/coveralls/makojs/imagemin.svg
-[coveralls]: https://coveralls.io/github/makojs/imagemin
 [david-badge]: https://img.shields.io/david/makojs/imagemin.svg
 [david-dev-badge]: https://img.shields.io/david/dev/makojs/imagemin.svg
 [david-dev]: https://david-dm.org/makojs/imagemin#info=devDependencies
@@ -52,5 +48,3 @@ Below is an example `.makorc` that configures svg compression:
 [mako-buffer]: ../buffer
 [npm-badge]: https://img.shields.io/npm/v/mako-imagemin.svg
 [npm]: https://www.npmjs.com/package/mako-imagemin
-[nsp-badge]: https://nodesecurity.io/orgs/mako/projects/255fda5b-0f5b-48dc-af76-6c9188fb8858/badge
-[nsp]: https://nodesecurity.io/orgs/mako/projects/255fda5b-0f5b-48dc-af76-6c9188fb8858

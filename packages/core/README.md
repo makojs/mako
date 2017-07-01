@@ -3,10 +3,8 @@
 > The coordinator for mako builds.
 
 [![npm version][npm-badge]][npm]
-[![coveralls status][coveralls-badge]][coveralls]
 [![npm dependencies][david-badge]][david]
 [![npm dev dependencies][david-dev-badge]][david-dev]
-[![nsp status][nsp-badge]][nsp]
 
 
 ## API
@@ -90,8 +88,6 @@ A reference to the `runner` that initiated this build.
 
 [cache]: ../cache
 [cli]: ../cli
-[coveralls-badge]: https://img.shields.io/coveralls/makojs/core.svg
-[coveralls]: https://coveralls.io/github/makojs/core
 [david-badge]: https://img.shields.io/david/makojs/core.svg
 [david-dev-badge]: https://img.shields.io/david/dev/makojs/core.svg
 [david-dev]: https://david-dm.org/makojs/core#info=devDependencies
@@ -102,7 +98,5 @@ A reference to the `runner` that initiated this build.
 [mako-tree]: ../tree
 [npm-badge]: https://img.shields.io/npm/v/mako.svg
 [npm]: https://www.npmjs.com/package/mako
-[nsp-badge]: https://nodesecurity.io/orgs/mako/projects/214f3580-d2d9-4ba7-977d-e668e420f4d4/badge
-[nsp]: https://nodesecurity.io/orgs/mako/projects/214f3580-d2d9-4ba7-977d-e668e420f4d4
 [plugins]: https://github.com/makojs/core/wiki/Plugins
 [server]: ../serve

@@ -6,7 +6,6 @@
 [![coverage][coveralls-badge]][coveralls]
 [![npm dependencies][david-badge]][david]
 [![npm dev dependencies][david-dev-badge]][david-dev]
-[![nsp status][nsp-badge]][nsp]
 
 ## Purpose
 
@@ -43,5 +42,3 @@ workflows. (although I will point out it is discouraged by the babel team as far
 [mako-js]: ../js
 [npm-badge]: https://img.shields.io/npm/v/mako-babel.svg
 [npm]: https://www.npmjs.com/package/mako-babel
-[nsp-badge]: https://nodesecurity.io/orgs/mako/projects/8069eae6-647f-48f9-b6dc-bd6f224008c4/badge
-[nsp]: https://nodesecurity.io/orgs/mako/projects/8069eae6-647f-48f9-b6dc-bd6f224008c4

@@ -3,10 +3,8 @@
 > A plugin bundle for front-end workflows.
 
 [![npm version][npm-badge]][npm]
-[![coverage][coveralls-badge]][coveralls]
 [![npm dependencies][david-badge]][david]
 [![npm dev dependencies][david-dev-badge]][david-dev]
-[![nsp status][nsp-badge]][nsp]
 
 
 ## Usage
@@ -127,8 +125,6 @@ Initializes the plugin, available `options` include:
 
 [browserify]: https://browserify.org/
 [component]: https://github.com/componentjs/component
-[coveralls-badge]: https://img.shields.io/coveralls/makojs/browser.svg
-[coveralls]: https://coveralls.io/github/makojs/browser
 [david-badge]: https://img.shields.io/david/makojs/browser.svg
 [david-dev-badge]: https://img.shields.io/david/dev/makojs/browser.svg
 [david-dev]: https://david-dm.org/makojs/browser#info=devDependencies
@@ -138,6 +134,4 @@ Initializes the plugin, available `options` include:
 [mako-symlink]: ../symlink
 [npm-badge]: https://img.shields.io/npm/v/mako-browser.svg
 [npm]: https://www.npmjs.com/package/mako-browser
-[nsp-badge]: https://nodesecurity.io/orgs/mako/projects/12443c99-b5e4-4d15-bcbb-b6b5f9b7ca14/badge
-[nsp]: https://nodesecurity.io/orgs/mako/projects/12443c99-b5e4-4d15-bcbb-b6b5f9b7ca14
 [resolve]: https://www.npmjs.com/package/resolve

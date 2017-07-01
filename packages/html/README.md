@@ -3,10 +3,8 @@
 > A plugin bundle for parsing HTML files for other front-end asset dependencies.
 
 [![npm version][npm-badge]][npm]
-[![coverage][coveralls-badge]][coveralls]
 [![npm dependencies][david-badge]][david]
 [![npm dev dependencies][david-dev-badge]][david-dev]
-[![nsp status][nsp-badge]][nsp]
 
 ## Purpose
 
@@ -34,13 +32,9 @@ Initializes the plugin, available `options` include:
  - `scripts` whether or not to process script dependencies (default: `true`)
 
 
-[coveralls-badge]: https://img.shields.io/coveralls/makojs/html.svg
-[coveralls]: https://coveralls.io/github/makojs/html
 [david-badge]: https://img.shields.io/david/makojs/html.svg
 [david-dev-badge]: https://img.shields.io/david/dev/makojs/html.svg
 [david-dev]: https://david-dm.org/makojs/html#info=devDependencies
 [david]: https://david-dm.org/makojs/html
 [npm-badge]: https://img.shields.io/npm/v/mako-html.svg
 [npm]: https://www.npmjs.com/package/mako-html
-[nsp-badge]: https://nodesecurity.io/orgs/mako/projects/82eb54b2-99dd-4cdc-a487-5917cd9d5e84/badge
-[nsp]: https://nodesecurity.io/orgs/mako/projects/82eb54b2-99dd-4cdc-a487-5917cd9d5e84

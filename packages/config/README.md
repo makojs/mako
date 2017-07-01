@@ -3,10 +3,8 @@
 > A helper for loading mako build config from a file.
 
 [![npm version][npm-badge]][npm]
-[![coverage][coveralls-badge]][coveralls]
 [![npm dependencies][david-badge]][david]
 [![npm dev dependencies][david-dev-badge]][david-dev]
-[![nsp status][nsp-badge]][nsp]
 
 This helper is for loading mako build configuration, allowing easy use among
 different tools.
@@ -150,13 +148,9 @@ The same arguments are accepted, and the same result is returned synchronously.
 (any errors will be thrown as an exception)
 
 
-[coveralls-badge]: https://img.shields.io/coveralls/makojs/config.svg
-[coveralls]: https://coveralls.io/github/makojs/config
 [david-badge]: https://img.shields.io/david/makojs/config.svg
 [david-dev-badge]: https://img.shields.io/david/dev/makojs/config.svg
 [david-dev]: https://david-dm.org/makojs/config#info=devDependencies
 [david]: https://david-dm.org/makojs/config
 [npm-badge]: https://img.shields.io/npm/v/mako-config.svg
 [npm]: https://www.npmjs.com/package/mako-config
-[nsp-badge]: https://nodesecurity.io/orgs/mako/projects/0cc5c022-f36c-4ff4-8eff-5e897d21457d/badge
-[nsp]: https://nodesecurity.io/orgs/mako/projects/0cc5c022-f36c-4ff4-8eff-5e897d21457d

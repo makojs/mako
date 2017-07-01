@@ -6,7 +6,6 @@
 [![travis build status][travis-badge]][travis]
 [![appveyor build status][appveyor-badge]][appveyor]
 [![coveralls status][coveralls-badge]][coveralls]
-[![nsp status][nsp-badge]][nsp]
 [![code style][standard-badge]][standard]
 [![gitter][gitter-badge]][gitter]
 
@@ -88,8 +87,6 @@ mako()                      // create a new runner
 [metalsmith]: http://metalsmith.io/
 [npm-badge]: https://img.shields.io/npm/v/mako.svg
 [npm]: https://www.npmjs.com/package/mako
-[nsp-badge]: https://nodesecurity.io/orgs/mako/projects/214f3580-d2d9-4ba7-977d-e668e420f4d4/badge
-[nsp]: https://nodesecurity.io/orgs/mako/projects/214f3580-d2d9-4ba7-977d-e668e420f4d4
 [plugins]: https://github.com/makojs/core/wiki/Plugins
 [server]: https://github.com/makojs/serve
 [standard-badge]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg

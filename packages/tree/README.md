@@ -3,11 +3,8 @@
 > The build tree structure used internally by mako
 
 [![npm version][npm-badge]][npm]
-[![coverage][coveralls-badge]][coveralls]
 [![npm dependencies][david-badge]][david]
 [![npm dev dependencies][david-dev-badge]][david-dev]
-[![nsp status][nsp-badge]][nsp]
-
 
 ## API
 
@@ -250,13 +247,9 @@ Takes a plain object and converts it into a `File` instance.
 The id generator for files, exposed here to allow public use and customization.
 
 
-[coveralls-badge]: https://img.shields.io/coveralls/makojs/tree.svg
-[coveralls]: https://coveralls.io/github/makojs/tree
 [david-badge]: https://img.shields.io/david/makojs/tree.svg
 [david-dev-badge]: https://img.shields.io/david/dev/makojs/tree.svg
 [david-dev]: https://david-dm.org/makojs/tree#info=devDependencies
 [david]: https://david-dm.org/makojs/tree
 [npm-badge]: https://img.shields.io/npm/v/mako-tree.svg
 [npm]: https://www.npmjs.com/package/mako-tree
-[nsp-badge]: https://nodesecurity.io/orgs/mako/projects/a77a3cfc-85a9-48d0-997a-4057eebb8bea/badge
-[nsp]: https://nodesecurity.io/orgs/mako/projects/a77a3cfc-85a9-48d0-997a-4057eebb8bea

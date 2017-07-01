@@ -3,11 +3,8 @@
 > A logger to be shared by mako CLI tools.
 
 [![npm version][npm-badge]][npm]
-[![coverage][coveralls-badge]][coveralls]
 [![npm dependencies][david-badge]][david]
 [![npm dev dependencies][david-dev-badge]][david-dev]
-[![nsp status][nsp-badge]][nsp]
-
 
 ## API
 
@@ -62,13 +59,9 @@ Log with the `debug` level. Supports the same interpolation as `util.format()`.
 Log with the `silly` level. Supports the same interpolation as `util.format()`.
 
 
-[coveralls-badge]: https://img.shields.io/coveralls/makojs/logger.svg
-[coveralls]: https://coveralls.io/github/makojs/logger
 [david-badge]: https://img.shields.io/david/makojs/logger.svg
 [david-dev-badge]: https://img.shields.io/david/dev/makojs/logger.svg
 [david-dev]: https://david-dm.org/makojs/logger#info=devDependencies
 [david]: https://david-dm.org/makojs/logger
 [npm-badge]: https://img.shields.io/npm/v/mako-logger.svg
 [npm]: https://www.npmjs.com/package/mako-logger
-[nsp-badge]: https://nodesecurity.io/orgs/mako/projects/ed8a277a-4d00-49cd-898e-6473d5b1e04a/badge
-[nsp]: https://nodesecurity.io/orgs/mako/projects/ed8a277a-4d00-49cd-898e-6473d5b1e04a

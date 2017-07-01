@@ -5,7 +5,6 @@
 [![npm version][npm-badge]][npm]
 [![npm dependencies][david-badge]][david]
 [![npm dev dependencies][david-dev-badge]][david-dev]
-[![nsp status][nsp-badge]][nsp]
 
 
 ## Install
@@ -78,5 +77,3 @@ $ DEBUG=mako* mako index.js
 [david]: https://david-dm.org/makojs/cli
 [npm-badge]: https://img.shields.io/npm/v/mako-cli.svg
 [npm]: https://www.npmjs.com/package/mako-cli
-[nsp-badge]: https://nodesecurity.io/orgs/mako/projects/3759aec6-e2aa-4db1-a980-e04b0418cc5a/badge
-[nsp]: https://nodesecurity.io/orgs/mako/projects/3759aec6-e2aa-4db1-a980-e04b0418cc5a

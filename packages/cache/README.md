@@ -3,10 +3,8 @@
 > A helper for reading/writing build caches.
 
 [![npm version][npm-badge]][npm]
-[![coverage][coveralls-badge]][coveralls]
 [![npm dependencies][david-badge]][david]
 [![npm dev dependencies][david-dev-badge]][david-dev]
-[![nsp status][nsp-badge]][nsp]
 
 This helper encapsulates the logic for loading and saving mako build cache files.
 
@@ -71,8 +69,6 @@ The same as `cache.clear([root])`, except it is **synchronous**.
 Returns the calculated path to the file that the project `root` would have.
 
 
-[coveralls-badge]: https://img.shields.io/coveralls/makojs/cache.svg
-[coveralls]: https://coveralls.io/github/makojs/cache
 [david-badge]: https://img.shields.io/david/makojs/cache.svg
 [david-dev-badge]: https://img.shields.io/david/dev/makojs/cache.svg
 [david-dev]: https://david-dm.org/makojs/cache#info=devDependencies
@@ -80,5 +76,3 @@ Returns the calculated path to the file that the project `root` would have.
 [mako-tree]: ../tree
 [npm-badge]: https://img.shields.io/npm/v/mako-cache.svg
 [npm]: https://www.npmjs.com/package/mako-cache
-[nsp-badge]: https://nodesecurity.io/orgs/mako/projects/6c7dd5b7-0aa7-4a2b-999b-65cfcb03b42e/badge
-[nsp]: https://nodesecurity.io/orgs/mako/projects/6c7dd5b7-0aa7-4a2b-999b-65cfcb03b42e

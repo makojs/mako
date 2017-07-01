@@ -3,10 +3,8 @@
 > A server for automatically building and serving files built via mako.
 
 [![npm version][npm-badge]][npm]
-[![coverage][coveralls-badge]][coveralls]
 [![npm dependencies][david-badge]][david]
 [![npm dev dependencies][david-dev-badge]][david-dev]
-[![nsp status][nsp-badge]][nsp]
 
 ## Install
 
@@ -113,8 +111,6 @@ The returned object includes the following properties:
  - `livereload` if enabled, the [livereload server][livereload] instance
 
 
-[coveralls-badge]: https://img.shields.io/coveralls/makojs/serve.svg
-[coveralls]: https://coveralls.io/github/makojs/serve
 [david-badge]: https://img.shields.io/david/makojs/serve.svg
 [david-dev-badge]: https://img.shields.io/david/dev/makojs/serve.svg
 [david-dev]: https://david-dm.org/makojs/serve#info=devDependencies
@@ -122,5 +118,3 @@ The returned object includes the following properties:
 [livereload]: https://github.com/dominicbarnes/livereload-base
 [npm-badge]: https://img.shields.io/npm/v/mako-serve.svg
 [npm]: https://www.npmjs.com/package/mako-serve
-[nsp-badge]: https://nodesecurity.io/orgs/mako/projects/47d7eb19-df68-4f01-9e13-5a6149e76736/badge
-[nsp]: https://nodesecurity.io/orgs/mako/projects/47d7eb19-df68-4f01-9e13-5a6149e76736
