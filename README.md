@@ -6,8 +6,6 @@
 [![travis build status][travis-badge]][travis]
 [![appveyor build status][appveyor-badge]][appveyor]
 [![coveralls status][coveralls-badge]][coveralls]
-[![npm dependencies][david-badge]][david]
-[![npm dev dependencies][david-dev-badge]][david-dev]
 [![nsp status][nsp-badge]][nsp]
 [![code style][standard-badge]][standard]
 [![gitter][gitter-badge]][gitter]
@@ -74,17 +72,13 @@ mako()                      // create a new runner
 ```
 
 
-[appveyor-badge]: https://img.shields.io/appveyor/ci/makojs/core.svg
-[appveyor]: https://ci.appveyor.com/project/makojs/core
+[appveyor-badge]: https://img.shields.io/appveyor/ci/makojs/mako.svg
+[appveyor]: https://ci.appveyor.com/project/makojs/mako
 [browserify]: http://browserify.org/
 [cache]: https://github.com/makojs/cache
 [cli]: https://github.com/makojs/cli
-[coveralls-badge]: https://img.shields.io/coveralls/makojs/core.svg
-[coveralls]: https://coveralls.io/github/makojs/core
-[david-badge]: https://img.shields.io/david/makojs/core.svg
-[david-dev-badge]: https://img.shields.io/david/dev/makojs/core.svg
-[david-dev]: https://david-dm.org/makojs/core#info=devDependencies
-[david]: https://david-dm.org/makojs/core
+[coveralls-badge]: https://img.shields.io/coveralls/makojs/mako.svg
+[coveralls]: https://coveralls.io/github/makojs/mako
 [gitter-badge]: https://img.shields.io/gitter/room/makojs/general.svg
 [gitter]: https://gitter.im/makojs/general
 [hooks]: https://github.com/makojs/core/wiki/Hooks
@@ -100,7 +94,7 @@ mako()                      // create a new runner
 [server]: https://github.com/makojs/serve
 [standard-badge]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg
 [standard]: http://standardjs.com/
-[travis-badge]: https://img.shields.io/travis/makojs/core.svg
-[travis]: https://travis-ci.org/makojs/core
+[travis-badge]: https://img.shields.io/travis/makojs/mako.svg
+[travis]: https://travis-ci.org/makojs/mako
 [webpack]: https://webpack.github.io/
 [wiki]: http://github.com/makojs/core/wiki
