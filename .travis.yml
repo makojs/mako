@@ -6,6 +6,7 @@ node_js:
   - 4
 after_success:
   - npm run coveralls
+  - npm run security
 cache:
   directories:
     - node_modules

@@ -10,6 +10,7 @@
     "istanbul-coveralls": "^1.0.3",
     "lerna": "^2.0.0-rc.4",
     "mocha": "^3.3.0",
+    "nsp": "^2.6.3",
     "standard": "^10.0.2"
   },
   "scripts": {
@@ -19,7 +20,8 @@
     "test": "lerna run test",
     "posttest": "istanbul-combine packages/*/coverage/coverage.json",
     "coveralls": "istanbul-coveralls",
-    "clean": "lerna clean"
+    "clean": "lerna clean",
+    "security": "lerna exec -- nsp check"
   },
   "standard": {
     "ignore": [
