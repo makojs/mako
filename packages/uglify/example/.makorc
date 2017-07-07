@@ -1,0 +1,9 @@
+{
+  "entries": [
+    "index.html"
+  ],
+  "plugins": [
+    "..",
+    [ "mako-browser", { "sourceMaps": "inline" } ]
+  ]
+}
