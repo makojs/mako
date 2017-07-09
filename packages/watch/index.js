@@ -17,13 +17,13 @@ class Watcher extends Emitter {
 
   initWatcher (options) {
     debug('starting watch for %s', utils.relative(this.root))
-    let params = Object.assign({ ignored: [ /node_modules/ ] }, options)
+    let params = Object.assign({ ignored: [ /node_modules/ ], ignoreInitial: true }, options)
     return chokidar.watch(this.root, params)
       .on('ready', () => this.handleReady())
       .on('change', (file, stat) => this.handleChange(file))
       .on('error', (err) => this.handleError(err))
-      // TODO: handle add/addDir
-      // TODO: handle unlink/unlinkDir
+      .on('add', (file) => this.handleAdd(file))
+      .on('unlink', (file) => this.handleRemove(file))
   }
 
   handleReady () {
@@ -37,6 +37,22 @@ class Watcher extends Emitter {
     let file = tree.findFile(abs)
     if (file) {
       this.emit('change', file, tree)
+    } else {
+      debug('file not found in dependency tree')
+    }
+  }
+
+  handleAdd (abs) {
+    debug('add %s', utils.relative(abs))
+    this.emit('add', abs, this.tree)
+  }
+
+  handleRemove (abs) {
+    debug('remove %s', utils.relative(abs))
+    let tree = this.tree
+    let file = tree.findFile(abs)
+    if (file) {
+      this.emit('remove', abs, this.tree)
     } else {
       debug('file not found in dependency tree')
     }

@@ -21,6 +21,7 @@
     "bluebird": "^3.4.1",
     "mako": "^1.1.7",
     "mako-tree": "^1.6.1",
+    "rimraf": "^2.6.1",
     "touch": "^1.0.0"
   },
   "scripts": {
