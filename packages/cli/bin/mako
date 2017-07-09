@@ -57,6 +57,16 @@ function * main () {
     logger.info('watch starting')
     let watcher = new Watcher(builder.tree)
 
+    watcher.on('add', file => {
+      logger.info('add detected: %s (reloading config)', utils.relative(file))
+      config({ overrides: program.args }).then((config) => conf = config)
+    })
+
+    watcher.on('remove', file => {
+      logger.info('remove detected: %s (reloading config)', utils.relative(file))
+      config({ overrides: program.args }).then((config) => conf = config)
+    })
+
     watcher.on('change', (file, tree) => {
       logger.info('change detected: %s', utils.relative(file.path))
       Promise.coroutine(runBuild)(builder, conf.entries)
