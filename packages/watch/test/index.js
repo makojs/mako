@@ -78,53 +78,39 @@ describe('watch plugin', function () {
   })
 
   context('remove', function () {
-    let watcher
-
     let root = fixture('remove')
     let tree = new Tree(root)
     tree.addFile(fixture('remove/1.txt'))
 
-    before(function (done) {
-      watcher = new Watcher(tree)
-      watcher.on('ready', done)
-    })
-
-    beforeEach(function (done) {
-      fs.writeFileSync(fixture('remove/1.txt'), '')
-      fs.writeFileSync(fixture('remove/2.txt'), '')
-      setTimeout(done, 100)
-    })
-
-    after(function () {
-      watcher.unwatch()
-    })
-
     it('should emit when a file in the tree is deleted', function (done) {
+      let watcher = new Watcher(tree)
       let file = fixture('remove/1.txt')
+      fs.writeFileSync(file, 'temporary file for test')
 
       watcher.once('remove', (fileArg, treeArg) => {
         assert.strictEqual(file, fileArg)
         assert.strictEqual(tree, treeArg)
+        watcher.unwatch()
         done()
       })
 
-      // add a slight delay to avoid missing the event
-      setTimeout(done, 100)
-
-      rm.sync(file)
+      watcher.on('ready', () => rm.sync(file))
     })
 
     it('should not emit when the file is not in the tree', function (done) {
+      let watcher = new Watcher(tree)
       let file = fixture('remove/2.txt')
+      fs.writeFileSync(file, 'temporary file for test')
 
       watcher.once('remove', (fileArg, treeArg) => {
+        watcher.unwatch()
         done(new Error('should not be called'))
       })
 
+      watcher.on('ready', () => rm.sync(file))
+
       // if a second goes by without the event, we'll consider this test a pass
       setTimeout(done, 1000)
-
-      rm.sync(file)
     })
   })
 })
