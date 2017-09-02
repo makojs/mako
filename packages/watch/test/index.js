@@ -108,6 +108,9 @@ describe('watch plugin', function () {
         done()
       })
 
+      // add a slight delay to avoid missing the event
+      setTimeout(done, 100)
+
       rm.sync(file)
     })
 
