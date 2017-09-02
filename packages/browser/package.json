@@ -1,6 +1,6 @@
 {
   "name": "mako-browser",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A mako plugin bundle for building a front-end project.",
   "keywords": [
     "mako-plugin",
@@ -21,7 +21,7 @@
     "mako-buffer": "^1.0.1",
     "mako-copy": "^1.0.2",
     "mako-css": "^1.2.2",
-    "mako-html": "^1.1.1",
+    "mako-html": "^1.2.0",
     "mako-js": "^1.1.4",
     "mako-output": "^1.0.1",
     "mako-sourcemaps": "^1.0.1",

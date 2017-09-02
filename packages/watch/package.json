@@ -1,6 +1,6 @@
 {
   "name": "mako-watch",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A mako plugin for watching the filesystem for changes and re-running builds.",
   "keywords": [
     "mako-plugin",

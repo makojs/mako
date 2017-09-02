@@ -1,6 +1,6 @@
 {
   "name": "mako-static-site",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A mako plugin bundle for building a static website.",
   "keywords": [
     "mako-plugin",
@@ -19,7 +19,7 @@
   "dependencies": {
     "clone": "^1.0.2",
     "debug": "^2.2.0",
-    "mako-browser": "^1.0.2",
+    "mako-browser": "^1.0.3",
     "mako-buffer": "^1.0.1",
     "mako-output": "^1.0.1",
     "mako-stat": "^1.0.1",

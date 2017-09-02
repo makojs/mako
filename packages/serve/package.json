@@ -1,6 +1,6 @@
 {
   "name": "mako-serve",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "A CLI tool for serving up files built using mako.",
   "keywords": [
     "mako-util",
@@ -28,7 +28,7 @@
     "mako-config": "^2.0.1",
     "mako-logger": "^0.1.1",
     "mako-utils": "^1.0.1",
-    "mako-watch": "^1.0.3"
+    "mako-watch": "^1.0.4"
   },
   "devDependencies": {
     "env-test": "^1.0.0",

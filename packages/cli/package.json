@@ -1,6 +1,6 @@
 {
   "name": "mako-cli",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "A CLI for the mako build runner",
   "keywords": [
     "mako-util",
@@ -21,11 +21,11 @@
     "mako-config": "^2.0.1",
     "mako-logger": "^0.1.1",
     "mako-utils": "^1.0.1",
-    "mako-watch": "^1.0.3",
+    "mako-watch": "^1.0.4",
     "winston": "^2.0.0"
   },
   "devDependencies": {
-    "mako-browser": "^1.0.2",
+    "mako-browser": "^1.0.3",
     "rimraf": "^2.4.3"
   },
   "scripts": {
