@@ -44,6 +44,7 @@ module.exports = function (options) {
   function inspectDependency (dep) {
     debug('> %s (%s)', dep.path, dep.type)
     if (isUrl(dep.path)) return false
+    if (dep.path && dep.path.startsWith('/')) return false
     switch (dep.type) {
       case 'script': return config.scripts
       case 'stylesheet': return config.stylesheets

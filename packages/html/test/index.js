@@ -58,6 +58,17 @@ describe('html plugin', function () {
     })
   })
 
+  it('should ignore absolute paths', function () {
+    let runner = mako({ root: fixture('absolute-paths') }).use(html())
+    let entry = runner.tree.addFile(fixture('absolute-paths/index.html'))
+    entry.contents = fs.readFileSync(entry.path)
+
+    return runner.build(entry).then(function (build) {
+      let file = build.tree.findFile(entry.path)
+      assert.lengthOf(file.dependencies(), 0)
+    })
+  })
+
   it('should ignore scripts without a source', function () {
     let runner = mako({ root: fixture('inline-script') }).use(html())
     let entry = runner.tree.addFile(fixture('inline-script/index.html'))
