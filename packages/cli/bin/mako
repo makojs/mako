@@ -5,6 +5,7 @@
 // dependencies
 let cache = require('mako-cache')
 let config = require('mako-config')
+let co = require('bluebird-co/manual')
 let logger = require('mako-logger')
 let mako = require('mako')
 let pkg = require('../package.json')
@@ -13,7 +14,7 @@ let Promise = require('bluebird')
 let utils = require('mako-utils')
 let Watcher = require('mako-watch')
 
-require('bluebird-co')
+Promise.coroutine.addYieldHandler(co.toPromise)
 
 // cli configuration
 program
